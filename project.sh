@@ -1,2 +1,3 @@
 echo "welcome to jenkins"
 #new project...............
+echo "the second job should trigger"
