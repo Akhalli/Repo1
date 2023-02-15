@@ -8,7 +8,7 @@ pipeline{
                     pip install virtualenv
                     mkdir my_project
                     python -m virtualenv venv
-                    venv\Scripts\activate
+                    venv\Scripts\activate.bat
                     pip install pytest
                     cd ../
                     '''
