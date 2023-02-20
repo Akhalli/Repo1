@@ -31,6 +31,7 @@ pipeline{
             steps {
                 script {
                     def runTests = load 'python_tests.groovy'
+                    runTests.runUnitests()
                 }
             }
         }

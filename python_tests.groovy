@@ -1,3 +1,3 @@
 def runUnitests(){
-    bat 'python -m pytest -v unit_tests.py'
+    cmd 'python -m pytest -v unit_tests.py'
 }
