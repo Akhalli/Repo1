@@ -29,7 +29,9 @@ pipeline{
         }
         stage('Unittest') {
             steps {
-                bat 'python -m pytest -v unit_tests.py'
+                script {
+                    def runTests = load 'python_tests.groovy'
+                }
             }
         }
     }
