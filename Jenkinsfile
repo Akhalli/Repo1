@@ -29,7 +29,7 @@ pipeline{
         }
         stage('Unittest') {
             steps {
-                script {
+                LabeledScript{
                     def runTests = load 'python_tests.groovy'
                     runTests.runUnitests()
                 }
