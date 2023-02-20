@@ -1,1 +1,4 @@
-def command = "python -m pytest -v Repo1/unit_tests.py"
+def command = "pytest -v unit_tests.py"
+def processBuilder = new ProcessBuilder(command.split())
+def process = processBuilder.start()
+process.waitFor()
